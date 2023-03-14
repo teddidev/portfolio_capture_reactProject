@@ -1,8 +1,8 @@
 import React from "react";
 import home1 from "../img/home1.png";
-import styled from "styled-components";
-//styles
 import { About, Description, Image, Hide } from "../styles";
+//framer motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (

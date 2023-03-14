@@ -1,3 +1,5 @@
+//api 대신 직접 data 만들기
+
 //Import Images
 import athlete from "./img/athlete-small.png";
 import goodtimes from "./img/goodtimes-small.png";
