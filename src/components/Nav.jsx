@@ -55,6 +55,23 @@ const StyledNav = styled.div`
     padding-left: 10rem;
     postion: relative;
   }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    #logo {
+      //inline element 는 top&bottom 에 padding,margin 을 줄 수 없다. > inline-block : 한줄의 block element 로 만들어서 탑다운 패딩 가능하게
+      display: inline-block;
+      margin: 1rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
+  }
 `;
 
 export default Nav;
