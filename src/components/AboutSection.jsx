@@ -31,7 +31,14 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        {/* staggerChildren 에서 빠져나가려면 그 element 에 '직접' initial & animate 를 prop 을 주면 됨 */}
+        <motion.img
+          // initial="hidden"
+          // animate="show"
+          variants={photoAnim}
+          src={home1}
+          alt="guy with a camera"
+        />
       </Image>
       <Wave />
     </About>
