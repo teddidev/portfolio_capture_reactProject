@@ -1,17 +1,22 @@
 //reusable component
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
-const Toggle = ({ children }) => {
+const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(true);
   return (
-    <div
+    <motion.div
+      layout
+      className="question"
       onClick={() => {
         setToggle(!toggle);
       }}
     >
+      <motion.h4 layout>{title}</motion.h4>
       {toggle ? children : ""}
-    </div>
+      <div className="faq-line"></div>
+    </motion.div>
   );
 };
 
